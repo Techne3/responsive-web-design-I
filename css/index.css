@@ -162,6 +162,7 @@ body {
 }
 .nav-container{
     display: flex;
+    margin-top: 30px;;
 }
 
 nav {
@@ -461,7 +462,9 @@ footer {
 	margin-top: 50px;
 }
 
-/* Media Queries */
+
+
+/* Media Queries  Service FIXME:*/
 @media screen and (max-width:1200px){
     .grid-container{
         justify-content: center;
@@ -472,9 +475,7 @@ footer {
         width:100%;
         text-align: center;
     }
-    .dot-list{
-        text-align: center;
-    }
+    
 }
 @media screen and (max-width: 900px) {
 	.grid-wrapper {
@@ -486,7 +487,10 @@ footer {
         justify-content: center;
         align-items: center;
         
-    }
+	}
+	.foot-wrapper{
+		text-align: center;
+	}
 	nav {
 		width: 100%;
 		flex-wrap: wrap;
@@ -502,12 +506,22 @@ footer {
 		width: 100%;
 	}
 	.foot-img {
-		width: 100%;
+        display:none;
+    }
+    .new-foot{
+        display:block;
+        width: 100%;
 		margin-top: 30px;
-		margin-left: 0;
-	}
+        margin-left: 0;
+    }
 	.product-foot p {
 		width: 100%;
+	}
+}
+
+@media screen and (min-width:1000px){
+	.new-foot{
+		display:none;
 	}
 }
 
