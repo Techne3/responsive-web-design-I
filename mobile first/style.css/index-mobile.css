@@ -1,0 +1,534 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	/* font-family: 'Exo 2', sans-serif; */
+	/* font-family: 'Titillium Web', sans-serif; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body {
+	margin: 0px 75px 75px 75px;
+	/* font-family: 'Red Hat Display', sans-serif; */
+}
+.nav-container{
+    display: flex;
+    margin-top: 30px;;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: 'Aldrich', sans-serif;
+    font-size: 20px;
+    width:80%;
+}
+
+nav a {
+	display: flex;
+	color: red;
+	margin: 20px 0;
+	text-decoration: none;
+	color: lightgray;
+}
+
+
+
+.change-page {
+	position: absolute;
+	margin-right: 60px;
+	margin-top: 100px;
+}
+
+.logo {
+	width: 200px;
+	height: 50px;
+}
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+header h1 {
+	display: inline-block;
+	width: 40%;
+	font-size: 125px;
+	text-align: center;
+}
+
+.btn {
+	margin-top: -50px;
+}
+
+button {
+	border: 1px solid black;
+	padding: 10px 80px;
+	font-size: 13px;
+}
+
+header img {
+	height: 650px;
+	vertical-align: middle;
+	margin-left: 70px;
+	margin-top: 10px;
+	width: 45%;
+}
+/* animation */
+
+
+
+hr {
+	margin-top: 85px;
+	margin-bottom: 50px;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+.top-content div {
+	letter-spacing: 1.2px;
+	line-height: 1.3;
+	margin-left: 20px;
+}
+
+.middle-img {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.bottom-content div {
+	width: 32%;
+	line-height: 1.2;
+	margin-top: 30px;
+	letter-spacing: 1.2px;
+	line-height: 1.3;
+}
+
+
+
+
+
+footer {
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+
+/* Media Queries */
+/* TABLET___________TABLET */
+@media screen and (max-width:900px){
+    .logo-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .nav-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+   
+    }
+    body{
+        margin:0 10%;
+    }
+    nav{
+        width: 100%;
+    }
+    nav a{
+        margin: 60px 0;
+    }
+    .nav-container{
+        margin-top: 30px;
+    }
+    header img{
+        
+        display: none;
+    }
+    header h1 {
+        font-size:80px;
+        text-align: center;
+      
+    }
+    header button{
+        margin-top: 100px;
+    }
+
+}
+
+/* PHONE+++++++++PHONE++++++FIXME: */
+@media screen and (max-width:600px){
+    nav a{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin:10px 0;
+        padding-top:15px;
+        border-top: 1px solid rgb(176, 176, 176);
+
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo-div{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .nav-container{
+        width:100%;
+    }
+    header h1{
+
+        font-size: 60px;
+        margin-top: 30px;
+        /* color:blue */
+    }
+    header{
+        /* width:60%; */
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header button{
+       padding:5px 40px;
+       font-size: 10px;
+    }
+    .top-content{
+        flex-direction: column;
+        width:100%;
+
+    }
+    .top-content div{
+      
+        width: 100%;
+        margin: 20px 0;
+    }
+    .middle-img{
+        margin:30px 0;
+    }
+    .bottom-content{
+        flex-direction: column;
+        width:100%;
+    }
+    .bottom-content div {
+        width:100%;
+    }
+}
+
+
+/* SERVICE */
+/* Product page FIXME: */
+
+/* .product-desktop-img {
+	display: flex;
+	width: 100%;
+	height: 250px;
+	margin-top: 20px;
+}
+.product-title h1 {
+	font-size: 50px;
+	margin-top: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.product-title p {
+	font-size: 20px;
+	line-height: 1.2;
+}
+.grid-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid-wrapper {
+	margin: 20px 20px;
+	font-size: 20px;
+	border: 2px solid black;
+	height: 35%;
+	width: 46%;
+	background-color: rgb(238, 238, 238);
+}
+
+.grid-wrapper h2 {
+	margin: 20px 20px;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+.grid-wrapper p {
+	margin: 20px 20px;
+	font-size: 20px;
+	line-height: 1.3;
+}
+.grid-wrapper button {
+	margin: 20px 20px;
+}
+
+.product-foot {
+	display: flex;
+	/* justify-content:space-between */
+}
+.foot-wrapper {
+	width: 47%;
+}
+
+.foot-wrapper h1 {
+	font-size: 30px;
+	font-family: sans-serif;
+}
+.foot-wrapper p {
+	font-size: 1.1rem;
+	line-height: 1.2;
+}
+.dot-list {
+	margin-top: 30px;
+}
+.dot-list li {
+	margin-top: 20px;
+}
+.foot-img {
+	width: 45%;
+	margin-left: 40px;
+	margin-bottom: 60px;
+	height: 350px;
+} */
+
+footer {
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+
+
+
+/* Media Queries  Service FIXME:
+@media screen and (max-width:1200px){
+    .grid-container{
+        justify-content: center;
+        width:100%;
+        
+    }
+    .grid-wrapper{
+        width:100%;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+	.grid-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .grid-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+	}
+	.foot-wrapper{
+		text-align: center;
+	}
+	nav {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.product-foot {
+		flex-direction: column;
+		width: 100%;
+	}
+	.foot-wrapper {
+		width: 100%;
+	}
+	.foot-img {
+        display:none;
+    }
+    .new-foot{
+        display:block;
+        width: 100%;
+		margin-top: 30px;
+        margin-left: 0;
+    }
+	.product-foot p {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:1000px){
+	.new-foot{
+		display:none;
+	}
+}
+
+ */
+
+
+
+
+
+
