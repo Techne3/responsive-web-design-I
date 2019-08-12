@@ -109,7 +109,7 @@ section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.6;
 }
 ol,
 ul {
@@ -261,7 +261,7 @@ footer {
 
 /* Media Queries */
 
-/* TABLET___________TABLET FIXME:*/
+
 
 
 /* MEDIA QUERIES ________FIXME: */
@@ -315,6 +315,9 @@ footer {
         flex-direction: row;
     
     }
+    .top-content p{
+        line-height: 1.4;
+    }
     .bottom-content{
         display: flex;
         justify-content:center;
@@ -325,9 +328,10 @@ footer {
         display:flex;
         flex-direction: column;
     }
+
 }
 
-
+/* TABLET___________TABLET FIXME:*/
 
 @media screen and (min-width:750px){
    
